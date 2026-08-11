@@ -72,72 +72,13 @@ export default function Footer({
   ];
 
   return (
-   <footer className="bg-[#020914] text-white/90 border-t border-white/15 font-sans pt-16 pb-12 relative overflow-hidden">
+    <footer className="bg-[#0B2545]/25 backdrop-blur-md border-t border-white/10 text-white/80 font-sans pt-16 pb-12 relative overflow-hidden">
 
-  {/* Network Background */}
-  <svg
-    className="absolute inset-0 w-full h-full pointer-events-none opacity-40"
-    viewBox="0 0 1600 900"
-    preserveAspectRatio="none"
-    aria-hidden="true"
-  >
-    {/* Network lines */}
-    <g
-      stroke="rgba(255,255,255,0.18)"
-      strokeWidth="1"
-      fill="none"
-    >
-      <line x1="30" y1="730" x2="180" y2="610" />
-      <line x1="180" y1="610" x2="330" y2="680" />
-      <line x1="180" y1="610" x2="270" y2="470" />
-      <line x1="270" y1="470" x2="430" y2="520" />
-      <line x1="270" y1="470" x2="350" y2="350" />
-      <line x1="350" y1="350" x2="500" y2="390" />
+      <div className="absolute left-1/2 top-12 -translate-x-1/2 w-[600px] h-[300px] bg-white/5 blur-[120px] rounded-full pointer-events-none" />
 
-      <line x1="1120" y1="500" x2="1240" y2="430" />
-      <line x1="1240" y1="430" x2="1370" y2="500" />
-      <line x1="1240" y1="430" x2="1310" y2="300" />
-      <line x1="1310" y1="300" x2="1450" y2="350" />
-      <line x1="1370" y1="500" x2="1480" y2="600" />
-      <line x1="1450" y1="350" x2="1570" y2="280" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
 
-      <line x1="1000" y1="760" x2="1110" y2="650" />
-      <line x1="1110" y1="650" x2="1240" y2="700" />
-      <line x1="1110" y1="650" x2="1180" y2="540" />
-    </g>
-
-    {/* Network nodes */}
-    <g fill="rgba(255,255,255,0.65)">
-      <circle cx="30" cy="730" r="3" />
-      <circle cx="180" cy="610" r="4" />
-      <circle cx="330" cy="680" r="3" />
-      <circle cx="270" cy="470" r="4" />
-      <circle cx="430" cy="520" r="3" />
-      <circle cx="350" cy="350" r="3" />
-      <circle cx="500" cy="390" r="3" />
-
-      <circle cx="1120" cy="500" r="3" />
-      <circle cx="1240" cy="430" r="4" />
-      <circle cx="1370" cy="500" r="3" />
-      <circle cx="1310" cy="300" r="4" />
-      <circle cx="1450" cy="350" r="3" />
-      <circle cx="1480" cy="600" r="3" />
-      <circle cx="1570" cy="280" r="3" />
-
-      <circle cx="1000" cy="760" r="3" />
-      <circle cx="1110" cy="650" r="4" />
-      <circle cx="1240" cy="700" r="3" />
-      <circle cx="1180" cy="540" r="3" />
-    </g>
-  </svg>
-  
-      <div className="absolute top-0 right-0 w-[600px] h-[350px] bg-[#0B2545] rounded-full blur-xl opacity-20 pointer-events-none" />
-
-      <div className="absolute bottom-0 left-0 w-[500px] h-[300px] bg-[#0B2545] rounded-full blur-xl opacity-20 pointer-events-none" />
-
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
-
-      <div className="absolute top-0 left-0 right-0 h-[1px] bg-white/20 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-[1px] bg-white/10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main footer grid */}
@@ -190,7 +131,7 @@ export default function Footer({
           {/* Quick Links */}
           <div className="lg:col-span-2 space-y-4 text-left">
             <h4 className="text-[11px] font-mono font-bold uppercase tracking-widest text-white border-b border-white/10 pb-2">
-              Quick Links
+              QUICK LINKS
             </h4>
 
             <ul className="space-y-2.5 text-xs sm:text-sm">
@@ -221,7 +162,7 @@ export default function Footer({
           {/* Services */}
           <div className="lg:col-span-3 space-y-4 text-left">
             <h4 className="text-[11px] font-mono font-bold uppercase tracking-widest text-white border-b border-white/10 pb-2">
-              Our Services
+              OUR SERVICES
             </h4>
 
             <ul className="space-y-2.5 text-xs sm:text-sm text-white/70">
@@ -241,7 +182,7 @@ export default function Footer({
           {/* Contact */}
           <div className="lg:col-span-3 space-y-4 text-left text-xs sm:text-sm">
             <h4 className="text-[11px] font-mono font-bold uppercase tracking-widest text-white border-b border-white/10 pb-2">
-              Contact Us
+              CONTACT US
             </h4>
 
             <div className="space-y-3 text-white/70 leading-relaxed">
@@ -250,7 +191,7 @@ export default function Footer({
                 <MapPin className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
 
                 <span className="text-xs">
-                  {companyProfile.address}
+                  Bole Sub-city, Woreda 03, Addis Ababa, Ethiopia
                 </span>
               </div>
 
@@ -259,10 +200,10 @@ export default function Footer({
                 <Phone className="w-4 h-4 text-white flex-shrink-0" />
 
                 <a
-                  href={`tel:${companyProfile.phone}`}
+                  href={`tel:+251911000000`}
                   className="font-mono text-xs text-white hover:underline transition-colors"
                 >
-                  {companyProfile.phone}
+                  +251 911 00 00 00
                 </a>
               </div>
 
@@ -271,10 +212,10 @@ export default function Footer({
                 <Mail className="w-4 h-4 text-white flex-shrink-0" />
 
                 <a
-                  href={`mailto:${companyProfile.email}`}
+                  href={`mailto:info@dnatech.et`}
                   className="font-mono text-xs lowercase text-white hover:underline"
                 >
-                  {companyProfile.email}
+                  info@dnatech.et
                 </a>
               </div>
 
@@ -283,16 +224,12 @@ export default function Footer({
                 <Globe className="w-4 h-4 text-white flex-shrink-0" />
 
                 <a
-                  href={
-                    companyProfile.website.startsWith("http")
-                      ? companyProfile.website
-                      : `https://${companyProfile.website}`
-                  }
+                  href={`https://dnatech.et`}
                   target="_blank"
                   rel="noreferrer"
                   className="font-mono text-xs text-white hover:underline"
                 >
-                  {companyProfile.website}
+                  https://dnatech.et
                 </a>
               </div>
             </div>
@@ -300,13 +237,11 @@ export default function Footer({
         </div>
 
         {/* Bottom footer */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-mono text-white/50">
-          <div>
-            &copy; 2026 DNA TECH. All Rights Reserved.
-          </div>
+        <div className="pt-8 border-t border-white/10 mt-12">
+          <div className="text-[11px] font-mono text-white/50 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>© 2026 DNA TECH. All Rights Reserved.</div>
 
-          <div>
-            Data Neutral Analysis Technology // Addis Ababa, Ethiopia
+            <div>Data Neutral Analysis Technology // Addis Ababa, Ethiopia</div>
           </div>
         </div>
       </div>
