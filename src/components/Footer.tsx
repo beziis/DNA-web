@@ -72,6 +72,10 @@ export default function Footer({
   ];
 
   return (
+    <footer className="bg-[#0B2545] text-white/90 border-t border-white/15 font-sans pt-16 pb-12 relative overflow-hidden">
+      {/* Background Section Glows in #0B2545 */}
+      <div className="absolute top-0 right-0 w-[600px] h-[350px] bg-[#0B2545] rounded-full blur-xl opacity-20 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[300px] bg-[#0B2545] rounded-full blur-xl opacity-20 pointer-events-none" />
     <footer className="bg-[#0B2545]/25 backdrop-blur-md border-t border-white/10 text-white/80 font-sans pt-16 pb-12 relative overflow-hidden">
 
       <div className="absolute left-1/2 top-12 -translate-x-1/2 w-[600px] h-[300px] bg-white/5 blur-[120px] rounded-full pointer-events-none" />
