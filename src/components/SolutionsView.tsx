@@ -396,35 +396,6 @@ export default function SolutionsView({ setCurrentPage }: SolutionsViewProps) {
           </div>
         </section>
 
-        {/* 5. TECHNOLOGY STACK */}
-        <section className="space-y-8">
-          <div className="text-center max-w-2xl mx-auto">
-            <span className="font-mono text-xs uppercase tracking-widest text-white/60 font-bold block mb-1">
-              Infrastructure
-            </span>
-            <h2 className="font-sans font-extrabold text-2xl sm:text-3xl text-white tracking-tight">Our Technology Stack</h2>
-          </div>
-
-          <motion.div 
-            variants={fastStaggerContainerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"
-          >
-            {techStack.map((tech, tIdx) => (
-              <motion.div 
-                key={tIdx} 
-                variants={fadeInUpItemVariants}
-                className="p-4 rounded-xl bg-[#0B2545]/40 border border-white/10 text-center card-hover-lift"
-              >
-                <div className="font-mono text-xs font-bold text-white">{tech.name}</div>
-                <div className="font-sans text-[10px] text-white/50 mt-1">{tech.category}</div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </section>
-
         {/* 6. WHY OUR APPROACH WORKS */}
         <section className="space-y-10">
           <div className="text-center max-w-2xl mx-auto">
