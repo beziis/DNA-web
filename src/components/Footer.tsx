@@ -38,7 +38,7 @@ export default function Footer({ currentView, setView }: FooterProps) {
   ];
 
   return (
-    <footer className="bg-[#0B2545] text-white/90 border-t border-white/15 font-sans pt-16 pb-12 relative overflow-hidden">
+    <footer className="bg-[#0B2545] bg-opacity-100 text-white/90 border-t border-white/15 font-sans pt-16 pb-12 relative overflow-hidden">
       {/* Background Section Glows in #0B2545 */}
       <div className="absolute top-0 right-0 w-[600px] h-[350px] bg-[#0B2545] rounded-full blur-xl opacity-20 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[300px] bg-[#0B2545] rounded-full blur-xl opacity-20 pointer-events-none" />
