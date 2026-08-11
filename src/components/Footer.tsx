@@ -38,10 +38,16 @@ export default function Footer({ currentView, setView }: FooterProps) {
   ];
 
   return (
-    <footer className="bg-transparent backdrop-blur-sm text-white/80 border-t border-white/10 font-sans pt-16 pb-12 relative overflow-hidden">
-      {/* Background Subtle Grid & Ambient Glow matching Solutions page hero card */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-white/5 blur-[120px] rounded-full pointer-events-none" />
+    <footer className="bg-[#020914] bg-opacity-100 text-white/90 border-t border-white/15 font-sans pt-16 pb-12 relative overflow-hidden">
+      {/* Background Section Glows in #0B2545 */}
+      <div className="absolute top-0 right-0 w-[600px] h-[350px] bg-[#0B2545] rounded-full blur-xl opacity-20 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[300px] bg-[#0B2545] rounded-full blur-xl opacity-20 pointer-events-none" />
+
+      {/* Subtle Grid Pattern Overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
+
+      {/* Top Border Accent Line */}
+      <div className="absolute top-0 left-0 right-0 h-[1px] bg-white/20 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
